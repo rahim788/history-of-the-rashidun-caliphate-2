@@ -1,0 +1,411 @@
+html{
+    background-color: #F4F0E6;
+}
+
+/* The code below is adapted from this youtube tutorial; https://youtu.be/Oa9LTDR9ugU?si=6Du-WSxcSrDjHqhl*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(244, 240, 230);
+
+      }
+
+.container {
+    width: 120;
+    height: 100vh;
+    background-image: url(img/mosque.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 4%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    color: rgba(67, 0, 0, 0);
+    mix-blend-mode:multiply;
+
+}
+.navbar {
+    display: flex;
+    height: 28%;
+    align-items: center;
+}
+.logo {
+width: 100px;
+cursor: pointer;
+
+}
+
+nav {
+flex: 1;
+text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    font-family: 'Instrument Sans', sans-serif;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Instrument Sans', sans-serif;
+    
+}
+
+nav ul li a:hover {
+ text-decoration: underline;
+
+}
+
+/* end of code used from tutorial*/
+
+
+@media screen and (max-width:600px) {
+    nav ul li   {
+         float: none;
+         width: 70%;
+         margin-top: 20px;
+     }
+    }
+    @media screen and (max-width:600px) {
+        nav ul li a {
+             float: none;
+             width: 70%;
+             margin-top: 20px;
+             margin-bottom: 20px;
+         }
+        }
+
+
+.title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Instrument Sans', sans-serif;
+    margin-left: 10px;
+
+}
+.rest-of-pages-navbar a {
+    color: black;
+    font-size: 16px;
+    font-family: 'Instrument Sans', sans-serif;
+}
+.rest-of-pages-title a {
+    color: black;
+    font-size: 20px;
+    font-family: 'Instrument Sans', sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* this .content-column code is common to a lot of these patterns */
+
+.content-column {
+    padding: 40px 20px; 
+}
+
+.content-column-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* you can use the .editable-text class to modify the typography for the standard column of content */
+
+.editable-text img {
+  margin: 1rem 0;
+}
+
+.editable-text h1 {
+  margin:0; 
+  padding: 5rem 0 2rem 0; 
+  color:rgb(0, 0, 0);
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+font-size: 60px;
+font-weight: lighter;
+}
+
+.editable-text h3 {
+  margin:0; 
+  padding: 1rem 0 0.5rem 0; 
+  color:rgb(0, 0, 0);
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: lighter;
+}
+
+.editable-text h2 {
+    margin:0; 
+    padding: 1rem 0 0.5rem 0; 
+    color:rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+    font-size: xx-large;
+    font-weight: lighter;
+  }
+
+.editable-text p {
+  margin:0; 
+  padding: 0 0 1rem 0;
+  color: black;
+  font-family: 'Instrument Sans', sans-serif;
+}
+/* end .content-column code */
+
+.logo {
+
+    color: black;
+    font-size: 16px;
+    font-family: 'Instrument Sans', sans-serif;
+
+}
+.images {
+   display: block;
+   margin:auto;
+   border-radius: 20px;
+   color: black;
+   font-family: 'Instrument Sans' , sans-serif;
+   font-size: small;
+}
+
+/* following code to create block quote adapted from here: https://youtu.be/_R-TmN5kErE?si=mkovDtuFOgqMbsFQ */
+
+.blockquote {
+    max-width: 1400px;
+    padding: 200px;
+    background-color: black;
+    color: #F4F0E6;
+    box-sizing: border-box;
+}
+
+
+.quote {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
+/* end of quote tutorial */
+
+@media screen and (max-width: 480px) {
+    .blockquote, .quote, .ref, .muhammad {
+      display: flex;
+      align-items: center;
+   
+
+    }
+}
+/* media query to make the quote font size smaller on smaller screens*/
+
+@media screen and (max-width: 480px) {
+     .quote, .ref, .muhammad {
+      font-size: 16px;
+      width: 100px;
+      display: block;
+      margin: auto;
+    }
+
+}
+
+
+
+  
+
+
+    
+.ref {
+    font-family: 'Instrument Sans', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+
+
+
+.muhammad {
+display: block;
+margin: auto;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-family: 'Instrument Sans' , sans-serif;
+    font-size: xx-small;
+    
+
+}
+
+
+
+iframe{
+    margin: 20px;
+
+}
+
+.fort {
+display: block;
+margin: auto;
+align-self: center;
+color: black;
+    font-size: 16px;
+    font-family: 'Instrument Sans', sans-serif;
+
+}
+.back{
+    margin:20px; 
+  padding: 0 0 1rem 0;
+  color: black;
+  font-family: 'Instrument Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-emphasis: none;
+
+}
+.back a {
+    margin: 20px ; 
+  color: black;
+  font-family: 'Instrument Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-emphasis: none;
+
+}
+.back a:hover {
+    margin: 20px ; 
+  color: black;
+  font-family: 'Instrument Sans', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  text-emphasis: none;
+
+}
+#abovemap{
+    margin: 20px; 
+    padding: 1rem 0 0.5rem 0; 
+    color:rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    text-emphasis: none;
+    font-weight: normal;
+}
+
+
+
+
+.text-image-container {
+    max-width: 1280px;
+    margin: 2rem auto;
+}
+
+@media screen and (min-width:700px) {
+    .text-image-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.left .text-image-text {
+    order: 1;
+}
+
+.text-image-text {
+    flex: 1;
+}
+
+.text-image-content {
+    flex: 1;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Instrument sans', sans-serif;
+}
+
+.text-image-content a {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Instrument sans', sans-serif;
+}
+.footnote a {
+    color: black;
+    text-decoration: none;
+}
+
+.footnote a:hover{
+    text-decoration: underline;
+
+}
+
+.bibliography{
+    margin: 20px; 
+    padding: 1rem 0 0.5rem 0; 
+    color:rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    text-emphasis: none;
+    font-weight: normal;
+
+}
+
+
+ol {
+    font-family: 'Instrument Sans', sans-serif;
+    margin-bottom: 40px;
+    text-align: left;
+    display: block;
+    margin-left: 22rem;
+    margin-top: 10px;
+    color: black;
+    list-style-type: decimal;
+    font-size: 14px;
+  }
+  h4 {
+    margin:0; 
+    padding: 1rem 0 0.5rem 0; 
+    color:rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+    font-size: larger;
+    font-weight: normal;
+    
+  }
+  figcaption {
+    color: black;
+    font-family: 'Instrument Sans' , sans-serif;
+    font-size: small;
+  }
+#describe {
+    color: black;
+    font-family: 'Instrument Sans' , sans-serif;
+    font-size: medium;
+}
+
+.arrow {
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+}
+.arrow a{
+    text-decoration: none;
+    color: black;
+
+}
+.arrow a:hover{
+    text-decoration: underline;
+    color: black;
+
+}
+/* following css code taken from and adapted from https://www.w3schools.com/css/css3_animations.asp and https://animate.style/ */
+.change {
+    animation-duration: 2500ms;
+    animation-delay: 2500ms;
+  }
+  .del  {
+    animation-duration: 3500ms;
+    animation-delay: 3500ms;
+  }
