@@ -374,11 +374,13 @@ ol {
     font-weight: normal;
     
   }
+
   figcaption {
     color: black;
     font-family: 'Instrument Sans' , sans-serif;
     font-size: small;
   }
+  
 #describe {
     color: black;
     font-family: 'Instrument Sans' , sans-serif;
